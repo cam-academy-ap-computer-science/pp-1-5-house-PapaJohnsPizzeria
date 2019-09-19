@@ -1,0 +1,24 @@
+Graded 9/18 by Mark Congdon
+
+Total Score:		25/25
+
+Compiles and Runs:	15/15
+Correct Output:		6/6
+Consistent Style:	2/2
+Efficiency:			2/2
+
+Good work!  Your program is very clean and well-organized.
+
+For future projects, you will want to start adding comments.
+Everybody does comments slightly differently, but at a minimum
+it would have been good to have a comment for the set of
+methods that did the verses, and a comment for the set of
+methods that did the individual lines within the verses.
+
+There is one efficiency that could be added.  Notice that
+every time you call thatMalt(), you call house() immediately afterwards.
+Therefore, you could add house() at the end of your thatMalt() method, and
+remove it from the verse methods.  Then, you could do the same thing
+with thatRat() (add thatMalt() at the end of it), etc.  Your maiden() function,
+then, would have just your first printed line, and the thatCow()
+method, and everything else would happen automatically.
